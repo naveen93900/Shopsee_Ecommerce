@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ShopEase</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="search-bar" placeholder="Search products...">
+    </header>
+    <main>
+        <section class="product-list">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2018/09/17/14/27/headphones-3683983_1280.jpg" alt="Product 1">
+                    <h3>Wireless Headphones</h3>
+                    <p>$50.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/07/14/24/smartwatch-8300238_1280.jpg" alt="Product 2">
+                    <h3>Smart Watch</h3>
+                    <p>$75.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2017/11/06/11/53/music-2923447_1280.png" alt="Product 3">
+                    <h3>Bluetooth Speaker</h3>
+                    <p>$40.00</p>
+                    <button onclick="addToCart('Bluetooth Speaker', 40)">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2021/11/03/05/33/fitness-band-6764739_1280.jpg" alt="Product 4">
+                    <h3>Fitness Tracker</h3>
+                    <p>$30.00</p>
+                    <button onclick="addToCart('Fitness Tracker', 30)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    
+    

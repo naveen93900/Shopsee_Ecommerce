@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">ShopEase</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="script.js"></script>
+    <script>
+        displayCart();
+
+        function checkout() {
+            alert('Thank you for your purchase!');
+            localStorage.removeItem('cart');
+            location.reload();
+        }
+    </script>
+   
+    <main>
+        <section class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-container"></div>
+            <div id="total-container"></div>
+            <button class="btn" onclick="checkout()">Checkout</button>
+
+   
